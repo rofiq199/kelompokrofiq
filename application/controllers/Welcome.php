@@ -19,6 +19,11 @@ class Welcome extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
+		
+	function __construct(){
+		parent::__construct();
+		$this->load->helper('html');
+	}
 	{
 		$this->load->view('welcome_message');
 	}
